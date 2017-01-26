@@ -61,9 +61,9 @@
         return availablePositions.indexOf(getComputedStyle(element).position) > -1;
       },
       getClosestPositionedParent(element) {
-        const parent = element.parentNode;
+        const parent = element ? element.parentNode : undefined;
 
-        if (!element || !parent || parent.tagName.toLowerCase() === 'body') {
+        if (!parent || parent.tagName.toLowerCase() === 'body') {
           return false;
         }
 
