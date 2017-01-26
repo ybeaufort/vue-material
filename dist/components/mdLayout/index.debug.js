@@ -220,7 +220,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 
-/***/ 197:
+/***/ 205:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
@@ -234,7 +234,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var __vue_styles__ = {}
 
 	/* styles */
-	__webpack_require__(197)
+	__webpack_require__(205)
 
 	/* script */
 	__vue_exports__ = __webpack_require__(135)
@@ -249,8 +249,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/marcosmoura/Projects/github/vue-material/src/components/mdLayout/mdLayout.vue"
-
+	__vue_options__.__file = "/home/mina/sources/vue-material/src/components/mdLayout/mdLayout.vue"
+	if(typeof __vue_options__.name === "undefined") {
+	  __vue_options__.name = "mdLayout"
+	}
 	/* hot reload */
 	if (false) {(function () {
 	  var hotAPI = require("vue-hot-reload-api")
@@ -258,12 +260,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-1f1a95a6", __vue_options__)
+	    hotAPI.createRecord("data-v-42f371cc", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-1f1a95a6", __vue_options__)
+	    hotAPI.reload("data-v-42f371cc", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] mdLayout.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional && typeof __vue_template__ !== "undefined") {console.error("[vue-loader] mdLayout.vue: functional components are not supported with templates, they should use render functions.")}
 
 	module.exports = __vue_exports__
 

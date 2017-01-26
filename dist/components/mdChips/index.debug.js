@@ -121,7 +121,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 
-/***/ 43:
+/***/ 44:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -234,7 +234,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _mixin2 = _interopRequireDefault(_mixin);
 
-	var _uniqueId = __webpack_require__(43);
+	var _uniqueId = __webpack_require__(44);
 
 	var _uniqueId2 = _interopRequireDefault(_uniqueId);
 
@@ -355,7 +355,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 
-/***/ 202:
+/***/ 208:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
@@ -379,7 +379,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__vue_exports__ = __webpack_require__(123)
 
 	/* template */
-	var __vue_template__ = __webpack_require__(326)
+	var __vue_template__ = __webpack_require__(345)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -391,8 +391,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/marcosmoura/Projects/github/vue-material/src/components/mdChips/mdChip.vue"
-	__vue_options__.render = __vue_template__.render
+	__vue_options__.__file = "/home/mina/sources/vue-material/src/components/mdChips/mdChip.vue"
+	if(typeof __vue_options__.name === "undefined") {
+	  __vue_options__.name = "mdChip"
+	}__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
 	/* hot reload */
@@ -402,12 +404,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-23449298", __vue_options__)
+	    hotAPI.createRecord("data-v-597433e7", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-23449298", __vue_options__)
+	    hotAPI.reload("data-v-597433e7", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] mdChip.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional && typeof __vue_template__ !== "undefined") {console.error("[vue-loader] mdChip.vue: functional components are not supported with templates, they should use render functions.")}
 
 	module.exports = __vue_exports__
 
@@ -421,13 +423,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	var __vue_styles__ = {}
 
 	/* styles */
-	__webpack_require__(202)
+	__webpack_require__(208)
 
 	/* script */
 	__vue_exports__ = __webpack_require__(124)
 
 	/* template */
-	var __vue_template__ = __webpack_require__(334)
+	var __vue_template__ = __webpack_require__(342)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -439,8 +441,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/marcosmoura/Projects/github/vue-material/src/components/mdChips/mdChips.vue"
-	__vue_options__.render = __vue_template__.render
+	__vue_options__.__file = "/home/mina/sources/vue-material/src/components/mdChips/mdChips.vue"
+	if(typeof __vue_options__.name === "undefined") {
+	  __vue_options__.name = "mdChips"
+	}__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
 	/* hot reload */
@@ -450,57 +454,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-3df67e22", __vue_options__)
+	    hotAPI.createRecord("data-v-4e842bc8", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-3df67e22", __vue_options__)
+	    hotAPI.reload("data-v-4e842bc8", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] mdChips.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional && typeof __vue_template__ !== "undefined") {console.error("[vue-loader] mdChips.vue: functional components are not supported with templates, they should use render functions.")}
 
 	module.exports = __vue_exports__
 
 
 /***/ },
 
-/***/ 326:
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('div', {
-	    staticClass: "md-chip",
-	    class: [_vm.themeClass, _vm.classes],
-	    attrs: {
-	      "tabindex": "0"
-	    }
-	  }, [_vm._t("default"), _vm._v(" "), (_vm.mdDeletable) ? _c('md-button', {
-	    staticClass: "md-icon-button md-dense md-delete",
-	    attrs: {
-	      "tabindex": "-1"
-	    },
-	    nativeOn: {
-	      "click": function($event) {
-	        !_vm.disabled && _vm.$emit('delete')
-	      },
-	      "keyup": function($event) {
-	        if (_vm._k($event.keyCode, "delete", [8, 46])) { return; }
-	        !_vm.disabled && _vm.$emit('delete')
-	      }
-	    }
-	  }, [_c('md-icon', {
-	    staticClass: "md-icon-delete"
-	  }, [_vm._v("cancel")])], 1) : _vm._e()], 2)
-	},staticRenderFns: []}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-23449298", module.exports)
-	  }
-	}
-
-/***/ },
-
-/***/ 334:
+/***/ 342:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -574,7 +540,45 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-3df67e22", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-4e842bc8", module.exports)
+	  }
+	}
+
+/***/ },
+
+/***/ 345:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('div', {
+	    staticClass: "md-chip",
+	    class: [_vm.themeClass, _vm.classes],
+	    attrs: {
+	      "tabindex": "0"
+	    }
+	  }, [_vm._t("default"), _vm._v(" "), (_vm.mdDeletable) ? _c('md-button', {
+	    staticClass: "md-icon-button md-dense md-delete",
+	    attrs: {
+	      "tabindex": "-1"
+	    },
+	    nativeOn: {
+	      "click": function($event) {
+	        !_vm.disabled && _vm.$emit('delete')
+	      },
+	      "keyup": function($event) {
+	        if (_vm._k($event.keyCode, "delete", [8, 46])) { return; }
+	        !_vm.disabled && _vm.$emit('delete')
+	      }
+	    }
+	  }, [_c('md-icon', {
+	    staticClass: "md-icon-delete"
+	  }, [_vm._v("cancel")])], 1) : _vm._e()], 2)
+	},staticRenderFns: []}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-hot-reload-api").rerender("data-v-597433e7", module.exports)
 	  }
 	}
 
